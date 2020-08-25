@@ -3,10 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rock,Paper,Scissors</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
-<body> 
+<body>
+  <div id=#page-wrapper>
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+      <h5>This is a simple rock, paper, scissors game.</h5>
+    </header>
+    <main>
+      <div id="game-select-buttons-grid" class="invisible">
+				<div id='game-select-button-container'>
+					<button id='bo3' class='game-select-buttons'>Best of 3</button>
+					<button id='bo5' class='game-select-buttons'>Best of 5</button>
+					<button id='bo7' class='game-select-buttons'>Best of 7</button>
+				</div>
+      </div>
+      <div id="game-grid" class="invisible">
+				<div id='game-grid-container'>
+					<h3>Please select an option</h3>
+					<button id='rock' class='game-options'>Rock</button>
+					<button id='paper' class='game-options'>Paper</button>
+					<button id='scissors' class='game-options'>Scissors</button>
+				</div>
+      </div>
+      <div id='player-and-computer-selections' class='visible'>
+				<div id='player-selection' class='selection-container'>
+					<h3 id='player-selection-text'>Player selected: </h3>
+				</div>
+				<div id='computer-selection' class='selection-container'>
+					<h3 id='computer-selection-text'>Computer selected: </h3>
+				</div>
+			</div>
+			<div id='round-winner' class='visible'>
+					<div id='round-winner-container'>
+						<h1 id='winner-text'>The winner is: Player</h1>
+					</div>
+			</div>
+      <div id="player-and-computer-scores" class='visible'>
+        <div class='score-board'>
+          <h3 id='player-score'>Player's Score: 10</h3>
+        </div>
+        <div class='score-board'>
+          <h3 id='computer-score'>Opponent's Score: 10</h3>
+        </div>
+			</div>
+			<div id='game-continue-button' class='visible'>
+				<div id='game-continue'>
+					<button id='next-round'>Next Round</button>
+				</div>
+			</div>
+			<div id='new-game-button' class='visible'>
+				<div id='new-game'>
+					<button id='reset-game'>New Game</button>
+				</div>
+			</div>
+    </main>
+    <footer>
+      <div id="footer-bar" class='visible'></div>
+    </footer>
+  </div> 
 </body>
 </html>
