@@ -4,65 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock,Paper,Scissors</title>
-  <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="style.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
 <body>
-  <div id=#page-wrapper>
-    <header>
-      <h1>Rock, Paper, Scissors</h1>
-      <h5>This is a simple rock, paper, scissors game.</h5>
+  <div id='wrapper'>
+    <header id='header-wrapper'>
+			<div id="main-heading-div">
+        <h1 id="heading">Rock, Paper, Scissors</h1>
+      </div>
+      <div id="description-div">
+        <h5 id="description">This is a simple Rock,Paper,Scissors game</h5>
+      </div>
     </header>
     <main>
-      <div id="game-select-buttons-grid" class="invisible">
-				<div id='game-select-button-container'>
-					<button id='bo3' class='game-select-buttons'>Best of 3</button>
-					<button id='bo5' class='game-select-buttons'>Best of 5</button>
-					<button id='bo7' class='game-select-buttons'>Best of 7</button>
-				</div>
+      <div id="game-select-wrapper">
+        <ul id="game-select-list">
+          <li class="radio-button"><input type="radio" id="bo3" value="3" name="game-select">Best of 3</li>
+          <li class="radio-button"><input type="radio" id="bo5" value="5" name="game-select">Best of 5</li>
+          <li class="radio-button"><input type="radio" id="bo7" value="7" name="game-select">Best of 7</li>
+        </ul>
       </div>
-      <div id="game-grid" class="invisible">
-				<div id='game-grid-container'>
-					<h3>Please select an option</h3>
-					<button id='rock' class='game-options'>Rock</button>
-					<button id='paper' class='game-options'>Paper</button>
-					<button id='scissors' class='game-options'>Scissors</button>
-				</div>
+      <div id="selection-wrapper">
+        <div id="player-selection-div" class="selections">
+          <h4 id="player-selection">Player Selected: </h4>
+        </div>
+        <div id="computer-selection-div" class="selections">
+          <h4 id="computer-selection">Computer Selected: </h4>
+        </div>
       </div>
-      <div id='player-and-computer-selections' class='visible'>
-				<div id='player-selection' class='selection-container'>
-					<h3 id='player-selection-text'>Player selected: </h3>
-				</div>
-				<div id='computer-selection' class='selection-container'>
-					<h3 id='computer-selection-text'>Computer selected: </h3>
-				</div>
-			</div>
-			<div id='round-winner' class='visible'>
-					<div id='round-winner-container'>
-						<h1 id='winner-text'>The winner is: Player</h1>
-					</div>
-			</div>
-      <div id="player-and-computer-scores" class='visible'>
-        <div class='score-board'>
-          <h3 id='player-score'>Player's Score: 10</h3>
+      <div id="game-score-wrapper">
+        <div id="player-score-div" class="scores">
+          <h5 id="player-score">Player Score:</h5>
         </div>
-        <div class='score-board'>
-          <h3 id='computer-score'>Opponent's Score: 10</h3>
+        <div id="computer-score-div" class="scores">
+          <h5 id="computer-score">Computer Score:</h5>
         </div>
-			</div>
-			<div id='game-continue-button' class='visible'>
-				<div id='game-continue'>
-					<button id='next-round'>Next Round</button>
-				</div>
-			</div>
-			<div id='new-game-button' class='visible'>
-				<div id='new-game'>
-					<button id='reset-game'>New Game</button>
-				</div>
-			</div>
+      </div>
+      <div id="player-select-wrapper">
+        <h4 id="player-choices-text">Select your choice below:</h4>
+        <ul id="player-select-list">
+          <li class="radio-button"><input type="radio" id="rock" value="rock" name="player-select" disabled>Rock</li>
+          <li class="radio-button"><input type="radio" id="paper" value="paper" name="player-select" disabled>Paper</li>
+          <li class="radio-button"><input type="radio" id="scissors" value="scissors" name="player-select" disabled>Scissors</li>
+        </ul>
+      </div>
+      <div id="winner-wrapper">
+        <div id="round-winner-div">
+          <h4 id="round-winner" class="winner">Round Winner: </h4>
+        </div>
+        <div id="game-winner-div">
+          <h4 id="game-winner" class="winner">Game Winner: </h4>
+        </div>
+      </div>
     </main>
     <footer>
-      <div id="footer-bar" class='visible'></div>
+
     </footer>
-  </div> 
+  </div>
 </body>
 </html>
